@@ -42,9 +42,6 @@ const Home = () => {
 }`}
               </pre>
               <div style={{ display: 'flex', gap: '10px', marginTop: '10px' }}>
-                <Link to={`/order/${id}`}>
-                  <button>View Details</button>
-                </Link>
                 {order.status === 'pending' && (
                   <button onClick={() => markDelivered(id)}>
                     Mark as Delivered
